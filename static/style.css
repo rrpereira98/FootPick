@@ -1,0 +1,12 @@
+.badge {
+    max-height: 100%;
+    max-width: 25em;
+}
+
+img.badge {
+    max-width: 19em;
+}
+
+.display {
+    max-height: 10px;
+}
