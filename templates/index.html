@@ -1,42 +1,12 @@
 {% extends "base.html" %}
-{% block title %}Team Pick{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block content %}
-<!-- <div class="container">
-    <div class="row">
-        <div class="col">
-            <h1>{{team1}}</h1>
-            <img src="/static/{{badge1}}.png" alt="jhh">
-        </div>
-        <div class="col">
-            <h1>{{team2}}</h1>
-            <img src="/static/{{badge2}}.png" alt="jhh">
-        </div>
-      </div>
-</div> -->
-
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h1 class= "d-flex justify-content-center">{{team1}}</h1>
-        </div>
-        <div class="col">
-            <h1 class= "d-flex justify-content-center">{{team2}}</h1>
-        </div>
-    </div>
-    <div class="row align-items-center">
-      <div class="col">
-        <img src="/static/{{badge1}}.png" alt="jhh" class="badge w-50 p-3 d-flex justify-content-center mx-auto">
-      </div>
-      <div class="col">
-        <img src="/static/{{badge2}}.png" alt="jhh" class="badge w-50 p-3 d-flex justify-content-center mx-auto">
-      </div>
-    </div>
-</div>
-
-<div class="d-flex justify-content-center">
-  <a href="/">
-    <button type="button" class="btn btn-secondary">New Teams</button>
-  </a>
-</div>
+<body>
+    <form action="/teams/" method = "POST">
+        <p>Player1 <input type = "text" name = "Player1" /></p>
+        <p>Player2 <input type = "text" name = "Player2" /></p>
+        <p><input type = "submit" value = "submit" /></p>
+    </form>
+</body>
 {% endblock %}

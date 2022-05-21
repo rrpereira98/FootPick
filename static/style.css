@@ -10,3 +10,11 @@ img.badge {
 .display {
     max-height: 10px;
 }
+
+.inv {
+    display: none;
+}
+
+.new_teams {
+    margin-bottom: 2em;
+}

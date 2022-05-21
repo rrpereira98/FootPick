@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Team Pick{% endblock %}
+
+{% block content %}
+<!-- <div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>{{team1}}</h1>
+            <img src="/static/{{badge1}}.png" alt="jhh">
+        </div>
+        <div class="col">
+            <h1>{{team2}}</h1>
+            <img src="/static/{{badge2}}.png" alt="jhh">
+        </div>
+      </div>
+</div> -->
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col">
+      <h1 class="d-flex justify-content-center">{{form_usernames["Player1"]}}</h1>
+    </div>
+    <div class="col">
+      <h1 class="d-flex justify-content-center">{{form_usernames["Player2"]}}</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class= "d-flex justify-content-center">{{team1}}</h1>
+        </div>
+        <div class="col">
+            <h1 class= "d-flex justify-content-center">{{team2}}</h1>
+        </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col">
+        <img src="/static/{{badge1}}.png" alt="jhh" class="badge w-50 p-3 d-flex justify-content-center mx-auto">
+      </div>
+      <div class="col">
+        <img src="/static/{{badge2}}.png" alt="jhh" class="badge w-50 p-3 d-flex justify-content-center mx-auto">
+      </div>
+    </div>
+</div>
+
+<div class="new_teams container d-flex justify-content-center lign-items-end fixed-bottom">
+  <form action="/teams/" method="POST">
+    <input class="inv" value="{{form_usernames['Player1']}}" type = "text" name = "Player1" />
+    <input class="inv" value="{{form_usernames['Player2']}}" type = "text" name = "Player2" />
+    <button type="submit" class="btn btn-secondary">New Teams</button>
+  </form>
+</div>
+{% endblock %}
