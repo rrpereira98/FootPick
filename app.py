@@ -11,4 +11,4 @@ def index():
     return render_template("index.html", team1 = tee[0][0], team2 = tee[1][0], badge1 = badge1, badge2 = badge2)
 
 if __name__ == "__main__":
-    app.run(debug=False, host="0.0.0.0")
+    app.run(debug=True)
